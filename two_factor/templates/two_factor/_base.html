@@ -42,7 +42,9 @@
 </head>
 <body>
     {% block logout %}
+
     <button type="button" class="right" id="logout_btn"  onclick="window.location.href='/logout/'">Logout</button>
+    <button type="button" class="right" onclick="window.history.go(-1); return false;"  value="Back">Back</button>
     {% endblock %}
   <!div class="alert alert-success"><p class="container"></p></div>
 

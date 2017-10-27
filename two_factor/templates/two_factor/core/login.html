@@ -1,6 +1,7 @@
 {% extends "two_factor/_base_focus.html" %}
 {% load i18n two_factor %}
-{% block logout %} {% endblock %}
+{% block logout %} <button type="submit" id="account_open_btn"  style="left:90%" onclick=" window.location.href='/account_open/'">open new account</button>
+{% endblock %}
 {% block content %}
   <h1>{% block title %}{% trans "Login" %}{% endblock %}</h1>
 
